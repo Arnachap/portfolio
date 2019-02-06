@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #2F3A56;
+    color: #D8E8E8;
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5
+}
+
+.menu-btn {
+    position: absolute;
+    z-index: 3;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.menu-btn .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #D8E8E8;
+    transition: all 0.5s ease-out;
+}
+
+main {
+    padding: 4rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 20vh;
+}
+
+.red {
+    color: #E2474B;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.typing-text::after {
+    content: "|";
+    color: #E2474B;
+    animation: blink ease 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 0;
+    } 50% {
+      opacity: 1;
+    }
+  }
