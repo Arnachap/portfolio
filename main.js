@@ -5,10 +5,12 @@ const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.menu-nav');
 const navItems = document.querySelectorAll('.nav-item');
+const navLinks = document.querySelectorAll('.nav-link');
 
 let showMenu = false;
 
 menuBtn.addEventListener('click', toggleMenu);
+navLinks.forEach(navLink => navLink.addEventListener('click', toggleMenu));
 
 document.onkeydown = function (evt) {
     evt = evt || window.event;
@@ -113,3 +115,12 @@ function setTyper(element, words) {
 
     }
 }
+
+/*
+** Fullpage
+*/
+new fullpage('#fullpage', {
+    menu: '.menu-nav',
+    anchors: ['index', 'skills'],
+    scrollingSpeed: 500
+});
