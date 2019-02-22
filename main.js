@@ -124,3 +124,7 @@ new fullpage('#fullpage', {
     anchors: ['index', 'skills'],
     scrollingSpeed: 500
 });
+
+/*
+**  Skills Animation
+*/
