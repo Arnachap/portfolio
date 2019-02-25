@@ -1,0 +1,17 @@
+$white: #D8E8E8;
+$light-blue: #A8D0DA;
+$blue: #406D96;
+$dark-blue: #2F3A56;
+$red: #E2474B;
+
+@mixin easeOut {
+    transition: all 0.5s ease-out;
+}
+
+@keyframes blink {
+    0%, 100% {
+      opacity: 0;
+    } 50% {
+      opacity: 1;
+    }
+  }
