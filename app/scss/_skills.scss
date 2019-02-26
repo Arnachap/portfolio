@@ -52,15 +52,24 @@
             margin: 10px 0 0 0;
         }
 
-        .skill-schema {
+        .skills-schema {
             flex-grow: 1;
-            position: relative;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
 
-            .circle {
+            .chart {
                 margin: auto;
-                width: 650px;
-                height: 650px;
-                
+                position: relative;
+
+                i {
+                    position: absolute;
+                    top: calc(50% - 55px);
+                    left: calc(50% - 55px);
+
+                    &::before {
+                        font-size: 110px;
+                    }
+                }
             }
         }
     }

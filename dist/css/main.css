@@ -135,13 +135,19 @@ main {
       text-align: center;
       font-size: 2rem;
       margin: 10px 0 0 0; }
-    #skill-section section .skill-schema {
+    #skill-section section .skills-schema {
       flex-grow: 1;
-      position: relative; }
-      #skill-section section .skill-schema .circle {
+      display: grid;
+      grid-template-columns: auto auto auto auto; }
+      #skill-section section .skills-schema .chart {
         margin: auto;
-        width: 650px;
-        height: 650px; }
+        position: relative; }
+        #skill-section section .skills-schema .chart i {
+          position: absolute;
+          top: calc(50% - 55px);
+          left: calc(50% - 55px); }
+          #skill-section section .skills-schema .chart i::before {
+            font-size: 110px; }
 
 * {
   box-sizing: border-box; }

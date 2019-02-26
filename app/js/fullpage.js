@@ -1,4 +1,4 @@
-import fullpage from 'fullpage.js';
+import fullpage from '../../node_modules/fullpage.js/dist/fullpage.min.js';
 
 const fullpageInstance = new fullpage('#fullpage', {
     menu: '.menu-nav',
