@@ -28,10 +28,11 @@
         h3 {
             text-align: center;
             font-size: 2rem;
+            margin: 10px 0 0 0;
         }
 
         .text-container {
-            padding: 0 30px;
+            padding: 20px;
 
             p {
                 text-align: justify;
@@ -53,23 +54,56 @@
         }
 
         .skills-schema {
-            flex-grow: 1;
-            display: grid;
-            grid-template-columns: auto auto auto auto;
+            padding: 40px 60px;
 
-            .chart {
-                margin: auto;
+            .skillbar {
                 position: relative;
-
-                i {
-                    position: absolute;
-                    top: calc(50% - 55px);
-                    left: calc(50% - 55px);
-
-                    &::before {
-                        font-size: 110px;
-                    }
-                }
+                display: block;
+                margin-bottom: 15px;
+                width: 100%;
+                background: $white;
+                height: 28px;
+                border-radius: 2px;
+                @include easeOut;
+            }
+            
+            .skillbar-title {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 125px;
+                text-align: center;
+                font-size: 1.2rem;
+                color: $white;
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+            }
+            
+            .skillbar-title span {
+                display: block;
+                background: rgba(0, 0, 0, 0.1);
+                padding: 0 20px;
+                height: 28px;
+                line-height: 28px;
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+            }
+            
+            .skillbar-bar {
+                height: 28px;
+                width: 0px;
+                background: #6adcfa;
+                border-radius: 3px;
+            }
+            
+            .skill-bar-percent {
+                position: absolute;
+                right: 10px;
+                top: 0;
+                font-size: 1rem;
+                height: 28px;
+                line-height: 28px;
+                color: $dark-blue;
             }
         }
     }

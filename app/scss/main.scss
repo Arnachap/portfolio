@@ -20,3 +20,11 @@ body {
     color: $white;
     background-color: $red;
 }
+
+.bar {
+    height: 2px;
+    width: 70px;
+    background-color: $red;
+    border-radius: 2px;
+    margin: 20px auto;
+}

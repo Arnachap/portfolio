@@ -5,7 +5,7 @@ const words = [
     '<web />',
     'javascript();',
     '<?php ?>',
-    'sass {}',
+    '.sass {}',
     '<React />'
 ];
 

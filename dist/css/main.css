@@ -120,9 +120,10 @@ main {
         max-width: 100%; }
     #skill-section aside h3 {
       text-align: center;
-      font-size: 2rem; }
+      font-size: 2rem;
+      margin: 10px 0 0 0; }
     #skill-section aside .text-container {
-      padding: 0 30px; }
+      padding: 20px; }
       #skill-section aside .text-container p {
         text-align: justify;
         font-size: 1.2rem; }
@@ -136,18 +137,47 @@ main {
       font-size: 2rem;
       margin: 10px 0 0 0; }
     #skill-section section .skills-schema {
-      flex-grow: 1;
-      display: grid;
-      grid-template-columns: auto auto auto auto; }
-      #skill-section section .skills-schema .chart {
-        margin: auto;
-        position: relative; }
-        #skill-section section .skills-schema .chart i {
-          position: absolute;
-          top: calc(50% - 55px);
-          left: calc(50% - 55px); }
-          #skill-section section .skills-schema .chart i::before {
-            font-size: 110px; }
+      padding: 40px 60px; }
+      #skill-section section .skills-schema .skillbar {
+        position: relative;
+        display: block;
+        margin-bottom: 15px;
+        width: 100%;
+        background: #D8E8E8;
+        height: 28px;
+        border-radius: 2px;
+        transition: all 0.5s ease-out; }
+      #skill-section section .skills-schema .skillbar-title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 125px;
+        text-align: center;
+        font-size: 1.2rem;
+        color: #D8E8E8;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px; }
+      #skill-section section .skills-schema .skillbar-title span {
+        display: block;
+        background: rgba(0, 0, 0, 0.1);
+        padding: 0 20px;
+        height: 28px;
+        line-height: 28px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px; }
+      #skill-section section .skills-schema .skillbar-bar {
+        height: 28px;
+        width: 0px;
+        background: #6adcfa;
+        border-radius: 3px; }
+      #skill-section section .skills-schema .skill-bar-percent {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        font-size: 1rem;
+        height: 28px;
+        line-height: 28px;
+        color: #2F3A56; }
 
 * {
   box-sizing: border-box; }
@@ -163,3 +193,10 @@ body {
 ::selection {
   color: #D8E8E8;
   background-color: #E2474B; }
+
+.bar {
+  height: 2px;
+  width: 70px;
+  background-color: #E2474B;
+  border-radius: 2px;
+  margin: 20px auto; }
